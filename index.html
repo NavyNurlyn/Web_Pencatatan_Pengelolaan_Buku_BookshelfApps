@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf Apps</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="tittle">
+        <h1 class="head_bar__title">BookShelf Apps</h1>
+        <p class="head_bar__desc">
+          Sebuah Web Sederhana untuk Pencatatan dan Pengelolaan Buku
+        </p>
+      </div>
+      <form id="searchBook">
+        <input
+          class=""
+          type="text"
+          id="searchBookTitle"
+          name=""
+          placeholder="Cari Buku"
+        />
+      </form>
+    </header>
+    <main>
+      <article class="input_section">
+        <div class="judul_kotak">
+          <h3>Masukkan Buku Baru</h3>
+        </div>
+        <div class="isi_kotak">
+          <form class="form" id="form">
+            <div class="input">
+              <label for="input_title">Judul</label>
+              <input
+                id="input_title"
+                type="text"
+                name="input_title"
+                required
+                placeholder="Judul Buku"
+              />
+            </div>
+            <div class="input">
+              <label for="input_author">Penulis</label>
+              <input
+                id="input_author"
+                type="text"
+                name="input_author"
+                required
+                placeholder="Author"
+              />
+            </div>
+            <div class="input">
+              <label for="input_year">Tahun</label>
+              <input
+                id="input_year"
+                type="number"
+                name="input_year"
+                required
+                placeholder="Tahun terbit"
+              />
+            </div>
+            <div class="input_inline">
+              <input id="inputBookCheckbox" type="checkbox" />
+              <label for="inputBookCheckbox">Selesai dibaca</label>
+            </div>
+            <button id="book-Submit" type="submit">Kirim</button>
+          </form>
+        </div>
+      </article>
+      <section class="wrapper">
+        <article class="book_shelf">
+          <div class="judul_kotak">
+            <h3>Belum Selesai Dibaca</h3>
+          </div>
+          <div class="isi_kotak">
+            <div id="incompleteBookshelfList" class="book_list"></div>
+          </div>
+        </article>
+
+        <article class="book_shelf">
+          <div class="judul_kotak">
+            <h3>Selesai Dibaca</h3>
+          </div>
+          <div class="isi_kotak">
+            <div id="completeBookshelfList" class="book_list"></div>
+          </div>
+        </article>
+      </section>
+
+      <aside class="kreator" id="kreator">
+        <h2>Biodata <span>Author</span></h2>
+        <article class="profile-card">
+          <div class="author-img">
+            <img src="Assets\author-img.jpg" alt="Gambar Author" />
+          </div>
+          <div class="author-bio">
+            <h3>Navy Nurlyn Ajrina</h3>
+            <p>Undergraduate Information System</p>
+          </div>
+          <div class="author-biodata">
+            <div class="header">
+              <h4>Tanggal Lahir</h4>
+              <h4>Email</h4>
+              <h4>No. Telepon</h4>
+              <h4>Alamat</h4>
+            </div>
+            <div class="data">
+              <p>:</p>
+              <p>:</p>
+              <p>:</p>
+              <p>:</p>
+            </div>
+            <div class="data">
+              <p>7 Juli 2003</p>
+              <p>navyajrina@gmail.com</p>
+              <p>+6281335895196</p>
+              <p>Sukodono, Sidoarjo</p>
+            </div>
+          </div>
+        </article>
+      </aside>
+    </main>
+    <footer>
+      <div class="bottom-bar">
+        <p>&copy; 2024 Navy Nurlyn Ajrina . All right reserved</p>
+      </div>
+    </footer>
+    <script src="main.js" type="text/javascript"></script>
+  </body>
+</html>
